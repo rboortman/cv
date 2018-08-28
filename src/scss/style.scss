@@ -26,6 +26,10 @@ $work-color: rgb(100, 181, 246);
 $work-color-light: rgb(227, 242, 253);
 $work-color-dark: rgba(21, 101, 192, 0.7);
 
+html {
+  font-size: 16px;
+}
+
 header {
   @extend .teal, .lighten-2;
 
@@ -71,6 +75,7 @@ header {
   color: $dark-font-color;
   height: $header-height - (3 * $spacing-unit);
   margin-bottom: $spacing-unit * 3;
+  padding: 2 * $spacing-unit;
   width: 100%;
 }
 
@@ -106,12 +111,13 @@ header {
   max-width: 35%;
 
   .flex-container {
-    padding: 0;
+    align-items: center;
+    padding: $spacing-unit / 2 0;
     width: 100%;
   }
 
   .icon {
-    flex-basis: 30%;
+    flex-basis: 25%;
     padding-right: $spacing-unit;
     text-align: right;
 
@@ -131,7 +137,7 @@ header {
   }
 
   .value {
-    flex-basis: 70%;
+    flex-basis: 75%;
   }
 
   a {
@@ -445,8 +451,8 @@ header {
 #hkv {
   .timeline-arrow {
     top: -$spacing-unit * 4.5;
-    transform: rotate(-170deg) scaleX(-1);
-    right: $spacing-unit * 15;
+    transform: rotate(-185deg) scaleX(-1);
+    right: $spacing-unit * 17;
   }
 }
 
@@ -468,6 +474,7 @@ header {
 
 .details-wrapper {
   color: $dark-font-color;
+  padding: 2 * $spacing-unit;
 
   h5 {
     margin: $spacing-unit * 2 0 $spacing-unit * 3;
